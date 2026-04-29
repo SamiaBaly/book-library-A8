@@ -6,9 +6,11 @@ import Image from "next/image";
 const Banner = () => {
   return (
     <div className="container mx-auto my-4">
-      <div className="bg-[#a29bfe42] flex justify-between items-center px-5 rounded-2xl">
+      <div className="bg-[#6c5ce71e] flex justify-between items-center px-5 rounded-2xl">
         <div className="flex-1 px-5">
-          <p className="badge bg-[#a29bfe42] px-4 mb-5">Welcome to Digital Library</p>
+          <p className="badge bg-[#a29bfe42] px-4 mb-5">
+            Welcome to Digital Library
+          </p>
           <h1 className="text-4xl md:text-4xl lg:text-6xl font-bold mb-4 max-w-2xl">
             Find Your <span className="text-[#6c5ce7]"> Next Read</span>
           </h1>

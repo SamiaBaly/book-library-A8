@@ -5,10 +5,11 @@ const nextConfig = {
   images:{
     remotePatterns:[
       {
-        hostname:'i.pining.com'
+        hostname:'***'
       }
     ]
   }
+  
 };
 
 export default nextConfig;
