@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "The Silent Forest",
+    "author": "Arif Rahman",
+    "description": "A mysterious tale of a forest where nothing is as it seems.",
+    "category": "Story",
+    "available_quantity": 5,
+    "image_url": "https://m.media-amazon.com/images/S/pv-target-images/9dac8829d31f40e46f6d6337e8786143d8707488d82595396fefb8d2a4c6a7ad.jpg"
+  },
+  {
+    "id": 2,
+    "title": "JavaScript Essentials",
+    "author": "Nadia Karim",
+    "description": "A beginner-friendly guide to mastering JavaScript fundamentals.",
+    "category": "Tech",
+    "available_quantity": 8,
+    "image_url": "https://media.wiley.com/product_data/coverImage300/1X/13942632/139426321X.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Quantum Wonders",
+    "author": "Dr. Hasan Ali",
+    "description": "An introduction to the fascinating world of quantum physics.",
+    "category": "Science",
+    "available_quantity": 3,
+    "image_url": "https://m.media-amazon.com/images/I/715wRU1RTiL.jpg"
+  },
+  {
+    "id": 4,
+    "title": "The Lost City",
+    "author": "Farhana Sultana",
+    "description": "An adventurous journey to uncover an ancient hidden civilization.",
+    "category": "Story",
+    "available_quantity": 6,
+    "image_url": "https://ik.imagekit.io/panmac/tr:di-placeholder_portrait_aMjPtD9YZ.jpg,tr:w-350,f-jpg,pr-true/edition/9781529001303.jpg"
+  },
+  {
+    "id": 5,
+    "title": "React in Action",
+    "author": "Imran Hossain",
+    "description": "Learn how to build modern web applications using React.",
+    "category": "Tech",
+    "available_quantity": 7,
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1616337398i/52962224.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Space Exploration 101",
+    "author": "Dr. Nusrat Jahan",
+    "description": "A beginner's guide to space missions and discoveries.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://m.media-amazon.com/images/I/91O+h3djJRL._UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Whispers of the Night",
+    "author": "Tanvir Ahmed",
+    "description": "A gripping story of secrets hidden in the dark.",
+    "category": "Story",
+    "available_quantity": 9,
+    "image_url": "https://store.pothi.com/media/images/products/2024/10/ebook15504/Image_0.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Node.js Backend Guide",
+    "author": "Sabbir Khan",
+    "description": "A practical guide to building scalable backend systems with Node.js.",
+    "category": "Tech",
+    "available_quantity": 5,
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1541489138i/42643290.jpg"
+  },
+  {
+    "id": 9,
+    "title": "The Human Brain",
+    "author": "Dr. Mehedi Hasan",
+    "description": "Explore how the human brain works and processes information.",
+    "category": "Science",
+    "available_quantity": 2,
+    "image_url": "https://static-01.daraz.com.bd/p/cc2c2ef424e7415843fe1550dd5046fe.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Echoes of the Past",
+    "author": "Sharmeen Akter",
+    "description": "A historical story blending love and mystery.",
+    "category": "Story",
+    "available_quantity": 6,
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1639074889i/59782335.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Full Stack Development",
+    "author": "Rakibul Islam",
+    "description": "Master frontend and backend development in one complete guide.",
+    "category": "Tech",
+    "available_quantity": 10,
+    "image_url": "https://m.media-amazon.com/images/I/61jcXMvVUKL._UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Climate Change Basics",
+    "author": "Dr. Ayesha Rahman",
+    "description": "Understand the causes and effects of climate change.",
+    "category": "Science",
+    "available_quantity": 3,
+    "image_url": "https://images.booksense.com/images/609/029/9798348029609.jpg"
+  }
+]
