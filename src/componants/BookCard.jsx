@@ -1,6 +1,7 @@
-import { Card, Separator } from '@heroui/react';
+import { Button, Card, Separator } from '@heroui/react';
 import Image from 'next/image';
 import React from 'react';
+import { ArrowDownFromLine, HeartFill } from '@gravity-ui/icons';
 
 const BookCard = ({book}) => {
   return (
@@ -17,10 +18,28 @@ const BookCard = ({book}) => {
         </div>
         <div>
           <h2 className="font-semibold text-xl text-[#1b1260]">{book.title}</h2>
-          <p className="text-[#6c5ce7]">{book.author}</p>
-          <Separator className="my-4"></Separator>
+          <p className="text-[#6c5ce7] font-semibold">{book.author}</p>
+          
           <p className="text-[#636e72]">{book.description}</p>
           <Separator className="my-4"></Separator>
+        </div>
+        <div className="flex justify-between items-center">
+          <div>
+            <p className="flex justify-between items-center gap-2">
+              <HeartFill></HeartFill>
+              {book.rating}
+            </p>
+          </div>
+          <Separator orientation="vertical" />
+          <div>
+            <p className="flex justify-between items-center gap-2">
+              <ArrowDownFromLine></ArrowDownFromLine>
+              {book.download_count}
+            </p>
+          </div>
+        </div>
+        <div>
+          <Button variant='outline' className="w-full">View details</Button>
         </div>
       </Card>
     </div>

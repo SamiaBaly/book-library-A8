@@ -6,10 +6,12 @@ const FeaturedBooks = async() => {
   const books= await getbooks();
   console.log(books);
   return (
-    <div className="container mx-auto">
-      <h2 className="text-3xl my-4 text-center font-bold text-[#1b1260]">Featured Books</h2>
-      <div className='grid grid-cols-4 gap-4'>
-        {books.map(book => (
+    <div className="container mx-auto bg-[#eff4f6] p-4 my-4 rounded-4xl">
+      <h2 className="text-3xl my-4 text-center font-bold text-[#1b1260]">
+        Featured Books
+      </h2>
+      <div className="grid grid-cols-4 gap-4">
+        {books.slice(0,4).map(book => (
           <BookCard key={book.id} book={book}></BookCard>
         ))}
       </div>
