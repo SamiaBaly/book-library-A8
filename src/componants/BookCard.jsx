@@ -15,6 +15,7 @@ const BookCard = ({book}) => {
             alt={book.title}
             className="object-cover rounded-2xl"
           ></Image>
+          <p className='bg-green-800 font-bold text-white rounded-xl px-4 py-1 top-3 right-4 absolute animate-caret-blink '>{book.category}</p>
         </div>
         <div>
           <h2 className="font-semibold text-xl text-[#1b1260]">{book.title}</h2>

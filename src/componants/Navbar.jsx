@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../assets/logo.png'
 import { Button } from '@heroui/react';
+import NavLinks from './NavLinks';
 
 const Navbar = () => {
   return (
@@ -22,13 +23,13 @@ const Navbar = () => {
 
         <ul className="flex items-center gap-5 text-sm text-[#6c5ce7] font-bold">
           <li>
-            <Link href={'/'}>Home</Link>
+            <NavLinks href={'/'}>Home</NavLinks>
           </li>
           <li>
-            <Link href={'/all-books'}>All Photos</Link>
+            <NavLinks href={'/all-books'}>All Books</NavLinks>
           </li>
           <li>
-            <Link href={'/profile'}>My Profile</Link>
+            <NavLinks href={'/profile'}>My Profile</NavLinks>
           </li>
         </ul>
 

@@ -1,0 +1,10 @@
+[
+  { "id": 1, "name": "Technology", "slug": "technology" },
+  { "id": 2, "name": "Health & Fitness", "slug": "health-fitness" },
+  { "id": 3, "name": "Education", "slug": "education" },
+  { "id": 4, "name": "Travel", "slug": "travel" },
+  { "id": 5, "name": "Food & Cooking", "slug": "food-cooking" },
+  { "id": 6, "name": "Business", "slug": "business" },
+  { "id": 7, "name": "Entertainment", "slug": "entertainment" }
+ 
+]
