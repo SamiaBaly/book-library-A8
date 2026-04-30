@@ -1,6 +1,6 @@
 import { Button } from '@heroui/react';
-import Link from 'next/link';
 import React from 'react';
+import NavLinks from './NavLinks';
 
 const Category =async () => {
   const res = await fetch('https://book-library-a8.vercel.app/category.json');
@@ -9,11 +9,11 @@ const Category =async () => {
   return (
     <div className="mb-5 space-x-3">
       {categories.map(category => (
-        <Link href={`?category=${category.name.toLowerCase()}`} key={category.id}>
+        <NavLinks href={`?category=${category.name.toLowerCase()}`} key={category.id}>
           <Button size="sm" variant="outline">
             {category.name}
           </Button>
-        </Link>
+        </NavLinks>
       ))}
     </div>
   );

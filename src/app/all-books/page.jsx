@@ -1,9 +1,6 @@
 import BookCard from '@/componants/BookCard';
 import Category from '@/componants/Category';
-import CategoryBooks from '@/componants/CategoryBooks';
-
 import { getbooks } from '@/componants/NewBookName';
-import React from 'react';
 
 const AllBooks =async ({searchParams}) => {
 
