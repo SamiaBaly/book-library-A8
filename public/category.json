@@ -1,6 +1,6 @@
 [
   { "id": 1, "name": "Tech", "slug": "technology" },
-  { "id": 2, "name": "Health & Fitness", "slug": "health-fitness" },
+  { "id": 2, "name": "Health", "slug": "health-fitness" },
   { "id": 3, "name": "Education", "slug": "education" },
   { "id": 4, "name": "Travel", "slug": "travel" },
   { "id": 5, "name": "science", "slug": "food-cooking" },
