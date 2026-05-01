@@ -2,10 +2,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../assets/logo.png'
-import { Button } from '@heroui/react';
+import { Avatar, Button } from '@heroui/react';
 import NavLinks from './NavLinks';
+import { authClient } from '@/lib/auth-client';
 
 const Navbar = () => {
+  const userData =authClient.useSession();
+  const user = userData.data?.user
+  const handleSignOut=()=>{
+    await authClient.signOut();
+  }
   return (
     <div className=" bg-base-100 shadow-sm">
       <div className="navbar container mx-auto ">
@@ -71,12 +77,32 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex gap-4 navbar-end">
-          <Button size='sm' variant="outline">
-            <Link href={'/signup'}>Sign Up</Link>
-          </Button>
-          <Button size='sm' variant="outline">
-            <Link href={'/signin'}>Sign In</Link>
-          </Button>
+          {!user && (
+            <div>
+              <Button size="sm" variant="outline">
+                <Link href={'/signup'}>Sign Up</Link>
+              </Button>
+              <Button size="sm" variant="outline">
+                <Link href={'/signin'}>Sign In</Link>
+              </Button>
+            </div>
+          )}
+
+          {user && (
+            <div className="flex items-center gap-2">
+              <Avatar sizes="sm">
+                <Avatar.Image
+                  alt="John Doe"
+                  src={user?.image}
+                  referrerPolicy="no-referrer"
+                />
+                <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+              </Avatar>
+              <Button onClick={handleSignOut} size="sm" variant="outline">
+                SignOut
+              </Button>
+            </div>
+          )}
         </div>
       </div>
     </div>
