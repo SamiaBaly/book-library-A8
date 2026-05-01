@@ -12,7 +12,7 @@ const Category =async ({activeId}) => {
         {categories.map(category => (
           <li
             key={category.id}
-            className={`${activeId === category.id ? 'bg-red-500' : "bg -slate - 100"} p-2 rounded-md font-bold text-center`}
+            className={`${activeId === category.name.toLowerCase() ? 'bg-purple-500 text-white' : "bg-slate-100"} p-2 rounded-md font-bold text-center`}
           >
             <Link href={`?category=${category.name.toLowerCase()}`}>
               {category.name}

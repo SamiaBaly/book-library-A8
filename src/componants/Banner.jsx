@@ -30,7 +30,7 @@ const Banner = () => {
           <Image
             height={400}
             width={400}
-            className="w-full"
+            className="w-full animate-pulse"
             src={bannerImg}
             alt="banner-img"
           ></Image>

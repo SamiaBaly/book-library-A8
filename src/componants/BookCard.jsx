@@ -15,13 +15,13 @@ const BookCard = ({book}) => {
             alt={book.title}
             className="object-cover rounded-2xl"
           ></Image>
-          <p className='bg-green-800 font-bold text-white rounded-xl px-4 py-1 top-3 right-4 absolute animate-caret-blink '>{book.category}</p>
+          <p className='bg-orange-200 font-bold  rounded-sm px-4 py-1 top-0 right-2 absolute  '>{book.category}</p>
         </div>
         <div>
           <h2 className="font-semibold text-xl text-[#1b1260]">{book.title}</h2>
           <p className="text-[#6c5ce7] font-semibold">{book.author}</p>
           
-          <p className="text-[#636e72]">{book.description}</p>
+          <p className="text-[#636e72] line-clamp-1">{book.description}</p>
           <Separator className="my-4"></Separator>
         </div>
         <div className="flex justify-between items-center">
