@@ -72,10 +72,10 @@ const Navbar = () => {
         </div>
         <div className="flex gap-4 navbar-end">
           <Button size='sm' variant="outline">
-            <Link href={'/logout'}>Logout</Link>
+            <Link href={'/signup'}>Sign Up</Link>
           </Button>
-          <Button size='sm' variant="tertiary">
-            <Link href={'/login'}>Login</Link>
+          <Button size='sm' variant="outline">
+            <Link href={'/signin'}>Sign In</Link>
           </Button>
         </div>
       </div>
