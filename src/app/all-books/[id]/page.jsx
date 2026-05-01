@@ -7,22 +7,23 @@ import React from 'react';
 const BookDetailsPage = async({params}) => {
   const {id}=await params;
   const books = await getbooks();
-  const book = books.find(b=>b.id=id);
+  const book = books.find(b=>b.id==id);
   console.log(book);
   
   
   return (
-    <div className="container mx-auto mt-10 ">
-      <div className="flex justify-between items-center border rounded-2xl p-4">
-        <div>
+    <div className="max-w-[80%] md:max-w-[40%] mx-auto mt-10 ">
+      <div className="flex flex-col md:flex-row justify-between items-center border rounded-2xl p-4">
+        <div className='p-4'>
           <Image
             height={400}
             width={400}
             src={book?.image_url}
             alt={book?.title}
+            className=''
           ></Image>
         </div>
-        <Separator orientation="vertical" className="mr-6"></Separator>
+       
         <div>
           <h2 className="text-2xl font-bold">{book.title}</h2>
           <p className="text-gray-500 ">{book.author}</p>

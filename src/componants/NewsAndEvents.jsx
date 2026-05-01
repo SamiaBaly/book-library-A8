@@ -7,8 +7,8 @@ import book4 from '../assets/book4.jpg'
 
 const NewsAndEvents = () => {
   return (
-    <div className="container mx-auto my-10">
-      <div>
+    <div className="container mx-auto my-10 p-6">
+      <div className="">
         <h2 className="text-3xl my-4 text-center font-bold text-[#1b1260]">
           News and Events
         </h2>
@@ -22,14 +22,13 @@ const NewsAndEvents = () => {
           this post done early at least.
         </p>
       </div>
-      <div className='flex gap-4'>
+      <div className="flex flex-col md:flex-row gap-4">
         <Card>
-          <div >
-
-          <Image className='h-[300px]' src={book2} alt='book'></Image>
+          <div>
+            <Image className="h-[300px]" src={book2} alt="book"></Image>
           </div>
           <div>
-            <h2 className='text-2xl font-bold my-3'>Popular books</h2>
+            <h2 className="text-2xl font-bold my-3">Popular books</h2>
             <p>
               It’s a nonfiction book that gives a brief overview of various
               types of religions around the world. It was an eye-opening read
@@ -39,9 +38,9 @@ const NewsAndEvents = () => {
           </div>
         </Card>
         <Card>
-          <Image className='h-[300px]' src={book3} alt='book'></Image>
+          <Image className="h-[300px]" src={book3} alt="book"></Image>
           <div>
-            <h2 className='text-2xl font-bold my-3'>Popular books</h2>
+            <h2 className="text-2xl font-bold my-3">Popular books</h2>
             <p>
               It’s a nonfiction book that gives a brief overview of various
               types of religions around the world. It was an eye-opening read
@@ -51,9 +50,9 @@ const NewsAndEvents = () => {
           </div>
         </Card>
         <Card>
-          <Image className='h-[300px]' src={book4} alt='book'></Image>
+          <Image className="h-[300px]" src={book4} alt="book"></Image>
           <div>
-            <h2  className='text-2xl font-bold my-3'>Popular books</h2>
+            <h2 className="text-2xl font-bold my-3">Popular books</h2>
             <p>
               It’s a nonfiction book that gives a brief overview of various
               types of religions around the world. It was an eye-opening read

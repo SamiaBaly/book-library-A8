@@ -7,41 +7,78 @@ import NavLinks from './NavLinks';
 
 const Navbar = () => {
   return (
-    <div className="border-b px-2">
-      <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
-        <div className="flex gap-2 items-center">
-          <Image
-            src={logo}
-            alt="logo"
-            loading="eager"
-            width={30}
-            height={30}
-            className="object-cover h-auto w-auto"
-          />
-          <h3 className="font-black text-lg text-[#6c5ce7]">Digital Library</h3>
+    <div className=" bg-base-100 shadow-sm">
+      <div className="navbar container mx-auto ">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                {' '}
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />{' '}
+              </svg>
+            </div>
+            <ul
+              tabIndex="-1"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-sm text-[#6c5ce7] font-bold"
+            >
+              <li>
+                <NavLinks href={'/'}>Home</NavLinks>
+              </li>
+              <li>
+                <NavLinks href={'/all-books'}>All Books</NavLinks>
+              </li>
+              <li>
+                <NavLinks href={'/profile'}>My Profile</NavLinks>
+              </li>
+            </ul>
+          </div>
+          <div className="flex gap-2 items-center">
+            <Image
+              src={logo}
+              alt="logo"
+              loading="eager"
+              width={30}
+              height={30}
+              className="object-cover h-auto w-auto"
+            />
+            <h3 className="font-black text-lg text-[#6c5ce7]">
+              Digital Library
+            </h3>
+          </div>
         </div>
-
-        <ul className="flex items-center gap-5 text-sm text-[#6c5ce7] font-bold">
-          <li>
-            <NavLinks href={'/'}>Home</NavLinks>
-          </li>
-          <li>
-            <NavLinks href={'/all-books'}>All Books</NavLinks>
-          </li>
-          <li>
-            <NavLinks href={'/profile'}>My Profile</NavLinks>
-          </li>
-        </ul>
-
-        <div className="flex gap-4">
-          <Button variant="outline">
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 text-sm text-[#6c5ce7] font-bold">
+            <li>
+              <NavLinks href={'/'}>Home</NavLinks>
+            </li>
+            <li>
+              <NavLinks href={'/all-books'}>All Books</NavLinks>
+            </li>
+            <li>
+              <NavLinks href={'/profile'}>My Profile</NavLinks>
+            </li>
+          </ul>
+        </div>
+        <div className="flex gap-4 navbar-end">
+          <Button size='sm' variant="outline">
             <Link href={'/logout'}>Logout</Link>
           </Button>
-          <Button variant="tertiary">
+          <Button size='sm' variant="tertiary">
             <Link href={'/login'}>Login</Link>
           </Button>
         </div>
-      </nav>
+      </div>
     </div>
   );
 };

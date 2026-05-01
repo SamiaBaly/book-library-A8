@@ -5,8 +5,8 @@ import { Button, InputGroup } from "@heroui/react";
 import Image from "next/image";
 const Banner = () => {
   return (
-    <div className="container mx-auto my-4">
-      <div className="bg-[#6c5ce71e] flex justify-between items-center px-5 rounded-2xl">
+    <div className="container mx-auto my-4 p-4">
+      <div className="bg-[#6c5ce71e] flex flex-col md:flex-row justify-between items-center px-5 rounded-2xl p-4">
         <div className="flex-1 px-5">
           <p className="badge bg-[#a29bfe42] px-4 mb-5">
             Welcome to Digital Library
@@ -20,9 +20,9 @@ const Banner = () => {
 
           <div className="flex gap-4">
             <Link href="#">
-              <button className="bg-[#6c5ce7] text-white px-6 py-2 rounded cursor-pointer">
+              <Button size="sm" className="bg-[#6c5ce7] text-white px-6 py-2 rounded cursor-pointer">
                 Browse Now
-              </button>
+              </Button>
             </Link>
           </div>
         </div>

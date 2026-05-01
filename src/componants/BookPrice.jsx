@@ -8,9 +8,9 @@ import Image from 'next/image';
 
 const BookPrice = () => {
   return (
-    <div className="container mx-auto bg-[#ddd9f861] p-10 rounded-4xl">
+    <div className="container mx-auto bg-[#ddd9f861] p-10 rounded-4xl my-10">
       
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
         <div className="grid grid-cols-5  gap-4">
           <div className="bg-red-100 col-span-2 rounded-md flex items-center justify-center">
             <Image
