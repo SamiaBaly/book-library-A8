@@ -12,6 +12,7 @@ import {
   TextField,
 } from '@heroui/react';
 import { useRouter } from 'next/navigation';
+import { GrGoogle } from 'react-icons/gr';
 
 export default function SignUpPage() {
   const router = useRouter();
@@ -99,15 +100,16 @@ console.log(data, error);
         </TextField>
 
         <div className="flex gap-2">
-          <Button type="submit">
+          <Button type="submit" className={'bg-[#6c5ce7]'}>
             <Check />
             Submit
           </Button>
-          <Button type="reset" variant="secondary">
+          <Button type="reset" variant="outline">
             Reset
           </Button>
         </div>
       </Form>
+     
     </Card>
   );
 }
