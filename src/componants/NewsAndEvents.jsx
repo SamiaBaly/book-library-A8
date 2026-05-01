@@ -26,7 +26,7 @@ const NewsAndEvents = () => {
         <Card>
           <div >
 
-          <Image className='h-[300px]' src={book2}></Image>
+          <Image className='h-[300px]' src={book2} alt='book'></Image>
           </div>
           <div>
             <h2 className='text-2xl font-bold my-3'>Popular books</h2>
@@ -39,7 +39,7 @@ const NewsAndEvents = () => {
           </div>
         </Card>
         <Card>
-          <Image className='h-[300px]' src={book3}></Image>
+          <Image className='h-[300px]' src={book3} alt='book'></Image>
           <div>
             <h2 className='text-2xl font-bold my-3'>Popular books</h2>
             <p>
@@ -51,7 +51,7 @@ const NewsAndEvents = () => {
           </div>
         </Card>
         <Card>
-          <Image className='h-[300px]' src={book4}></Image>
+          <Image className='h-[300px]' src={book4} alt='book'></Image>
           <div>
             <h2  className='text-2xl font-bold my-3'>Popular books</h2>
             <p>
