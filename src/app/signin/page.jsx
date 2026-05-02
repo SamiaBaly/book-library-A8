@@ -85,7 +85,7 @@ export default function SignUpPage() {
         </TextField>
 
         <div className="flex gap-2">
-          <Button type="submit">
+          <Button type="submit" className={'bg-[#6c5ce7]'}>
             <Check />
             Submit
           </Button>

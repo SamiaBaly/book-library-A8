@@ -8,8 +8,8 @@ import { authClient } from '@/lib/auth-client';
 
 const Navbar = () => {
   const userData =authClient.useSession();
-  const user = userData.data?.user
-  const handleSignOut=()=>{
+  const user = userData.data?.user;
+  const handleSignOut=async()=>{
     await authClient.signOut();
   }
   return (
@@ -79,8 +79,8 @@ const Navbar = () => {
         <div className="flex gap-4 navbar-end">
           {!user && (
             <div>
-              <Button size="sm" variant="outline">
-                <Link href={'/signup'}>Sign Up</Link>
+              <Button size="sm" variant="outline" className={"mr-2"}>
+                <Link href={'/signup'} className=''>Sign Up</Link>
               </Button>
               <Button size="sm" variant="outline">
                 <Link href={'/signin'}>Sign In</Link>
@@ -92,7 +92,7 @@ const Navbar = () => {
             <div className="flex items-center gap-2">
               <Avatar sizes="sm">
                 <Avatar.Image
-                  alt="John Doe"
+                  alt="User"
                   src={user?.image}
                   referrerPolicy="no-referrer"
                 />
