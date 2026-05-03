@@ -50,14 +50,17 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex gap-2 items-center">
-            <Image
-              src={logo}
-              alt="logo"
-              loading="eager"
-              width={30}
-              height={30}
-              className="object-cover h-auto w-auto"
-            />
+            <Link href={"/"}>
+              {' '}
+              <Image
+                src={logo}
+                alt="logo"
+                loading="eager"
+                width={30}
+                height={30}
+                className="object-cover h-auto w-auto"
+              />
+            </Link>
             <h3 className="font-black text-lg text-[#6c5ce7]">
               Digital Library
             </h3>
@@ -79,8 +82,10 @@ const Navbar = () => {
         <div className="flex gap-4 navbar-end">
           {!user && (
             <div>
-              <Button size="sm" variant="outline" className={"mr-2"}>
-                <Link href={'/signup'} className=''>Sign Up</Link>
+              <Button size="sm" variant="outline" className={'mr-2'}>
+                <Link href={'/signup'} className="">
+                  Sign Up
+                </Link>
               </Button>
               <Button size="sm" variant="outline">
                 <Link href={'/signin'}>Sign In</Link>

@@ -7,7 +7,7 @@ import Link from 'next/link';
 const BookCard = ({book}) => {
   return (
     <div>
-      <Card>
+      <Card className=" ">
         <div className="relative fill aspect-square">
           <Image
             fill
@@ -16,6 +16,7 @@ const BookCard = ({book}) => {
             alt={book.title}
             className="object-cover rounded-2xl"
           ></Image>
+        
           <p className="bg-orange-200 font-bold  rounded-sm px-4 py-1 top-0 right-2 absolute  ">
             {book.category}
           </p>
