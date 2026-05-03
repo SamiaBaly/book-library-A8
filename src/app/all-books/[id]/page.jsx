@@ -2,6 +2,7 @@ import { getbooks } from '@/componants/NewBookName';
 import { Star } from '@gravity-ui/icons';
 import { Button, Separator } from '@heroui/react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const BookDetailsPage = async({params}) => {
@@ -14,13 +15,13 @@ const BookDetailsPage = async({params}) => {
   return (
     <div className="max-w-[80%] md:max-w-[40%] mx-auto mt-10 ">
       <div className="flex flex-col md:flex-row justify-between items-center border rounded-2xl p-4">
-        <div className='p-4'>
+        <div className='p-4 relative'>
           <Image
             height={400}
             width={400}
             src={book?.image_url}
             alt={book?.title}
-            className=''
+            className='object-cover aspect-square'
           ></Image>
         </div>
        
@@ -49,6 +50,9 @@ const BookDetailsPage = async({params}) => {
             <p>
               <span className='font-bold'>Download:</span> {book?.download_count}
             </p>
+          </div>
+          <div className='mt-4'>
+            <Link href={"/all-books"}><Button variant='outline' className={"w-full hover:bg-purple-300"}>Back</Button></Link>
           </div>
         </div>
       </div>

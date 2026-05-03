@@ -50,7 +50,7 @@ const BookPrice = () => {
           </div>
         </div>
         <div className="space-y-6 mt-4">
-          <h2 className="text-5xl font-bold">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
             Great book, Happily <br /> Presented
           </h2>
           <p className="text-gray-400">

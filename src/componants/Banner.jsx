@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <div className="container mx-auto my-4 p-4">
       <div className="bg-[#6c5ce71e] flex flex-col md:flex-row justify-between items-center px-5 rounded-2xl p-4">
-        <div className="flex-1 px-5">
+        <div className="flex-1 px-5 text-center md:text-left">
           <p className="badge bg-[#a29bfe42] px-4 mb-5">
             Welcome to Digital Library
           </p>
@@ -18,8 +18,8 @@ const Banner = () => {
             Discover amazing books today
           </p>
 
-          <div className="flex gap-4">
-            <Link href="#">
+          <div className="flex gap-4 justify-center md:justify-start">
+            <Link href="/all-books">
               <Button size="sm" className="bg-[#6c5ce7] text-white px-6 py-2 rounded cursor-pointer">
                 Browse Now
               </Button>
