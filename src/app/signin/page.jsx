@@ -20,40 +20,41 @@ export default function SignInPage() {
   const router =useRouter();
   const onSubmit = async e => {
     e.preventDefault();
-   
+
     const email = e.target.email.value;
     const password = e.target.password.value;
 
+    let data, error;
+
     try {
-      const { data, error } = await authClient.signIn.email({
+      ({ data, error } = await authClient.signIn.email({
         email,
         password,
         callbackURL: '/',
-      });
+      }));
+
       if (error) {
         toast.error(error.message || 'Login failed');
         return;
       }
+
       if (data?.user) {
         toast.success('Login successful!');
         router.push('/');
         router.refresh();
       }
-    } catch(err){
-      toast.error("Something went Wrong!")
+    } catch (err) {
+      toast.error('Something went Wrong!');
     }
+
     console.log(data, error);
   };
-  const handleGoogleSignIn =async()=>{
-   try{
-     await authClient.signIn.social({
-    provider: "google",
-    callbackURL:"/",
-  })
-   } catch(err){
-    toast.error("Google signin failed")
-   }
-}
+  const handleGoogleSignIn = async () => {
+    authClient.signIn.social({
+      provider: 'google',
+      callbackURL: '/',
+    });
+  };
 
   return (
     <Card className="border mx-auto w-125 py-10 mt-5">
