@@ -11,28 +11,48 @@ import {
   Label,
   TextField,
 } from '@heroui/react';
+import { useRouter } from 'next/navigation';
+import toast from 'react-hot-toast';
+
 import { GrGoogle } from 'react-icons/gr';
 
-export default function SignUpPage() {
+export default function SignInPage() {
+  const router =useRouter();
   const onSubmit = async e => {
     e.preventDefault();
    
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    const { data, error } = await authClient.signIn.email({
-      
-      email,
-      password,
-      callbackURL:'/'
-      
-    });
+    try {
+      const { data, error } = await authClient.signIn.email({
+        email,
+        password,
+        callbackURL: '/',
+      });
+      if (error) {
+        toast.error(error.message || 'Login failed');
+        return;
+      }
+      if (data?.user) {
+        toast.success('Login successful!');
+        router.push('/');
+        router.refresh();
+      }
+    } catch(err){
+      toast.error("Something went Wrong!")
+    }
     console.log(data, error);
   };
   const handleGoogleSignIn =async()=>{
-    await authClient.signIn.social({
+   try{
+     await authClient.signIn.social({
     provider: "google",
+    callbackURL:"/",
   })
+   } catch(err){
+    toast.error("Google signin failed")
+   }
 }
 
   return (

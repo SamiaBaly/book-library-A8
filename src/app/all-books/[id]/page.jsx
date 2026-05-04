@@ -1,3 +1,4 @@
+import BorrowButton from '@/componants/BorrowButton';
 import { getbooks } from '@/componants/NewBookName';
 import { Star } from '@gravity-ui/icons';
 import { Button, Separator } from '@heroui/react';
@@ -15,16 +16,16 @@ const BookDetailsPage = async({params}) => {
   return (
     <div className="max-w-[80%] md:max-w-[40%] mx-auto mt-10 ">
       <div className="flex flex-col md:flex-row justify-between items-center border rounded-2xl p-4">
-        <div className='p-4 relative'>
+        <div className="p-4 relative">
           <Image
             height={400}
             width={400}
             src={book?.image_url}
             alt={book?.title}
-            className='object-cover aspect-square'
+            className="object-cover aspect-square"
           ></Image>
         </div>
-       
+
         <div>
           <h2 className="text-2xl font-bold">{book.title}</h2>
           <p className="text-gray-500 ">{book.author}</p>
@@ -45,14 +46,23 @@ const BookDetailsPage = async({params}) => {
           </div>
           <div className="flex justify-between items-center">
             <p>
-              <span className='font-bold'>Quantity:</span> {book?.available_quantity}
+              <span className="font-bold">Quantity:</span>{' '}
+              {book?.available_quantity}
             </p>
             <p>
-              <span className='font-bold'>Download:</span> {book?.download_count}
+              <span className="font-bold">Download:</span>{' '}
+              {book?.download_count}
             </p>
           </div>
-          <div className='mt-4'>
-            <Link href={"/all-books"}><Button variant='outline' className={"w-full hover:bg-purple-300"}>Back</Button></Link>
+          <div className="mt-4">
+            <BorrowButton book={book}>
+              <Button
+                variant="outline"
+                className={'w-full hover:bg-purple-300'}
+              >
+                Borrow This Book
+              </Button>
+            </BorrowButton>
           </div>
         </div>
       </div>

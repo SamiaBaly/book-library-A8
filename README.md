@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📚 Digital Library App
 
-## Getting Started
+**Digital Library** is a modern web application that transforms the traditional
+library experience into a seamless digital platform. Users can explore books,
+filter by categories, and borrow titles online with ease.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- 📖 Browse a wide collection of books
+- 🔍 Search books by title or author
+- 📂 Filter books by categories
+- 📘 View detailed book information
+- 📥 Borrow books online
+- 🔐 User authentication (Login / Signup)
+- 📱 Fully responsive design
+
+---
+
+## 🛠️ Tech Stack
+
+- Next.js
+- React
+- MongoDB
+- Tailwind CSS
+- HeroUI
+
+---
+
+## ⚙️ Installation
 
 ```bash
+git clone https://github.com/SamiaBaly/book-library-A8.git
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐Live Demo
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- 👉 https://book-library-a8-git-main-samiabalys-projects.vercel.app/
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧪 Usage
 
-## Learn More
+- Open http://localhost:3000
+- Browse and search books
+- Filter by category
+- View book details
+- Login to borrow books
 
-To learn more about Next.js, take a look at the following resources:
+## 🔐 Authentication
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Secure login/signup system
+- Session-based authentication
+- Protected routes for borrowing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📸 Screenshots
 
-## Deploy on Vercel
+Add your UI screenshots here
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📌 Future Improvements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- ⭐ Book ratings & reviews
+- 📊 Admin dashboard
+- 📅 Borrow history tracking
+- 🔔 Notifications system
+
+## 👨‍💻 Author
+
+Developed by **Samia Baly**
