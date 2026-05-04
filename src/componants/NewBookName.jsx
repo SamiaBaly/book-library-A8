@@ -1,10 +1,11 @@
 import { Button } from '@heroui/react';
 import React from 'react';
 import Marquee from 'react-fast-marquee';
-import data from "../../public/data.json"
+
 
 export const getbooks=async()=>{
-  return data;
+  const res = await fetch('https://book-library-a8-56mz.vercel.app/data.json');
+  return res.json();
 }
 
 const NewBookName =async () => {
