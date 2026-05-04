@@ -40,7 +40,7 @@ const AllBooks =async ({searchParams}) => {
           Search
         </button>
       </form>
-      <div className='grid grid-cols-8'>
+      <div className='md:grid md:grid-cols-8'>
         <Category className={"col-span-2"} activeId={category}></Category>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 col-span-6">
           {filteredBooks.length > 0 ? (

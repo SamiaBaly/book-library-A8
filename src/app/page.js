@@ -14,7 +14,6 @@ export default function Home() {
       <FeaturedBooks></FeaturedBooks>
       <BookPrice></BookPrice>
       <NewsAndEvents></NewsAndEvents>
-    
     </div>
   );
 }
