@@ -7,7 +7,8 @@ import NoData from './NoData';
 import categories from '../../public/category.json';
 
 
-const Category =async ({activeId}) => {
+const Category = ({activeId}) => {
+  console.log(categories);
  
   return (
     <div className="mb-5 space-x-3">
