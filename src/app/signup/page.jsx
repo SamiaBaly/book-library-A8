@@ -19,11 +19,13 @@ export default function SignUpPage() {
 
   const onSubmit = async e => {
     e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+     const name = formData.get('name');
+     const image = formData.get('image');
+     const email = formData.get('email');
+     const password = formData.get('password');
 
-    const name = e.target.name.value;
-    const image = e.target.image.value;
-    const email = e.target.email.value;
-    const password = e.target.password.value;
+  
 
     try {
       const { data, error } = await authClient.signUp.email({
@@ -33,17 +35,17 @@ export default function SignUpPage() {
         image,
       });
 
-      // ❌ Error case
+     
       if (error) {
         toast.error(error.message || 'Signup failed');
         return;
       }
 
-      // ✅ Success case
-      if (data?.user) {
+      
+      
         toast.success('Account created successfully!');
         router.push('/signin');
-      }
+      
     } catch (err) {
       toast.error('Something went wrong!');
     }
