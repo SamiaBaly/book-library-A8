@@ -4,10 +4,11 @@ import React from 'react';
 import Link from 'next/link';
 import NotFoundPage from '@/app/not-found';
 import NoData from './NoData';
+import categories from '../../public/category.json';
+
 
 const Category =async ({activeId}) => {
-  const res = await fetch('https://book-library-a8.vercel.app/category.json');
-  const categories= await res.json();
+ 
   return (
     <div className="mb-5 space-x-3">
       <h2 className='text-2xl font-bold text-purple-950 bg-purple-100 mb-4 p-2 rounded-md'>Category</h2>
