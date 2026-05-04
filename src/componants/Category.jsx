@@ -3,6 +3,7 @@ import React from 'react';
 
 import Link from 'next/link';
 import NotFoundPage from '@/app/not-found';
+import NoData from './NoData';
 
 const Category =async ({activeId}) => {
   const res = await fetch('https://book-library-a8.vercel.app/category.json');
@@ -20,7 +21,7 @@ const Category =async ({activeId}) => {
               {category.name}
             </Link>
           </li>
-        ))):(<NotFoundPage></NotFoundPage>)}
+        ))):(<NoData></NoData>)}
       </ul>
     </div>
   );
