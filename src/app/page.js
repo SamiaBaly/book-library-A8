@@ -11,7 +11,6 @@ export default function Home() {
     <div>
       <Banner></Banner>
       <NewBookName></NewBookName>
-      <CategoryBooks></CategoryBooks>
       <FeaturedBooks></FeaturedBooks>
       <BookPrice></BookPrice>
       <NewsAndEvents></NewsAndEvents>

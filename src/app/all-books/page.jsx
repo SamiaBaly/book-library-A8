@@ -40,15 +40,17 @@ const AllBooks =async ({searchParams}) => {
           Search
         </button>
       </form>
-      <Category activeId={category}></Category>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-        {filteredBooks.length > 0 ? (
-          filteredBooks.map(book => (
-            <BookCard key={book.id} book={book}></BookCard>
-          ))
-        ) : (
-          <NotFoundPage></NotFoundPage>
-        )}
+      <div className='grid grid-cols-8'>
+        <Category className={"col-span-2"} activeId={category}></Category>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 col-span-6">
+          {filteredBooks.length > 0 ? (
+            filteredBooks.map(book => (
+              <BookCard key={book.id} book={book}></BookCard>
+            ))
+          ) : (
+            <NotFoundPage></NotFoundPage>
+          )}
+        </div>
       </div>
     </div>
   );
